@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "post-install-cmd": [
+            "chmod -R 777 wp-content"
+        ]
+    },
+    "extra": {
+        "heroku": {
+            "newrelic": "false",
+            "nginx-includes": ["nginx.conf"]
+        }
+    }
+}
